@@ -1,0 +1,22 @@
+class SampleClass
+{}
+interface SampleInterface
+{}
+
+
+class ReflectionDemo1
+{
+	public static void main(String args[]) throws ClassNotFoundException
+	{
+		Class exClass = Class.forName("SampleInterface");
+		System.out.println("is SampleInterface an interface : "+ exClass.isInterface());
+
+		Class exInterface = Class.forName("SampleClass");
+		System.out.println("is SampleClass an interface : "+exInterface.isInterface());
+
+		Class p1 = Class.forName("java.lang.Integer");
+		System.out.println("is Integer a premitive datatype : "+p1.isPrimitive());
+
+		
+	}
+}
