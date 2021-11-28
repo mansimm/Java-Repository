@@ -1,0 +1,21 @@
+class Simple
+{
+
+}
+
+class ReflectionDemo 
+{
+	public static void main(String args[]) throws ClassNotFoundException
+	{
+		Class classObj = Class.forName("Simple");
+		System.out.println("Name of the class using forName() method : "+classObj.getName());
+
+		Simple simple = new Simple();
+		classObj = simple.getClass();
+		System.out.println("Name of the class using getClass() method : "+classObj.getName());
+
+		classObj = Simple.class;
+		System.out.println("Name of the class using .class : "+classObj.getName());
+	}
+
+}
