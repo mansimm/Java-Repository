@@ -24,6 +24,9 @@ public class JdbcDemo {
 			{
 				System.out.println("Id: "+rs.getInt(1)+" Name: "+rs.getString(2)+" Age: "+rs.getInt(3));
 			}
+			conn.close();
+			statement.close();
+			rs.close();
 			
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
