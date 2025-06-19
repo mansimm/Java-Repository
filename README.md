@@ -30,5 +30,5 @@ This repository contains a collection of Java practice programs designed to stre
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/java-practice.git
+   git clone https://github.com/mansimm/Java-Repository.git
    ```
